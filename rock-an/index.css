@@ -1,0 +1,24 @@
+body {
+    background:url(sky.jpeg) ;
+    background-size: cover;
+    background-repeat: none;
+}
+
+img {
+    width:  300px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+animation: fly 3s ease-in infinite;
+}
+
+@keyframes fly {
+0% {
+    transform: translateX(-50%);
+}
+100% {
+    transform: translate(-50%, -100vh);
+}
+
+}
